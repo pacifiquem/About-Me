@@ -1,2 +1,2 @@
-# Portifolio
-My personal website.
+## About me
+My personal_info website
