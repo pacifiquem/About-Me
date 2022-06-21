@@ -1,0 +1,177 @@
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    color: rgba(255, 255, 255, .85);
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 2em;
+    line-height: 1.5em;
+}
+
+::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+::selection {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+nav {
+    display: flex;
+    color: white;
+    height: 8vh;
+    position: relative;
+    top: 1em;
+    gap: 40vw;
+}
+nav img {
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 15vw;
+    margin-top: .7em;
+}
+
+.links {
+    display: flex;
+    gap: 1vw;
+    position: absolute;
+    right: 22vw;
+    top: 5vh;
+}
+
+.sub-links {
+    height: 5vh;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+    cursor: pointer;
+}
+
+b {
+    display: none;
+}
+.sub-links:hover > b {
+    display: block !important;
+}
+
+#container {
+
+    display: flex;
+    position: absolute;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px .1px 10px .7px rgba(120, 120, 120, 0.6);
+    left: 10px;
+    top: 2em;
+}
+
+#container>span {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 15px;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+#copyright {
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 1em;
+    left: 42vw;
+    color: rgb(244, 244, 244);
+}
+
+
+#name{
+
+    margin-left: 13%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: .3em;
+    font-size: 1.2em;
+    font-weight: 1000 !important;
+}
+
+.description {
+    margin: 2em 0;
+}
+
+.description, .ending {
+    margin-left: 1.6em;
+}
+
+#skills-ul{
+    display: inline;
+}
+#skills-ul li{
+    display: inline;
+    margin-left: .3em;
+    color: orange !important;
+    cursor: pointer;
+}
+#skills-ul li:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+
+    .body-container {
+        font-size: 18px;
+    }
+    .links {
+        gap: 8vw;
+    }
+    .logo {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .body-container {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .body-container {
+        font-size: 11px;
+    }
+
+    .links {
+        gap: 8vw;
+        right: 7vw;
+    }
+
+    nav {
+        gap: 27vw;
+    }
+
+    #copyright {
+        font-size: 15px;
+    }
+}
