@@ -78,9 +78,22 @@ b {
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 2px .1px 10px .7px rgba(120, 120, 120, 0.6);
     left: 10px;
-    top: 2em;
+    top: 2.5em;
+    animation-name: uptoogle;
+    animation-duration: 700ms;
+    animation-delay: 1ms;
+    animation-fill-mode: forwards;
+    
 }
 
+@keyframes uptoogle {
+    from {
+        top: 2.5em;
+    }
+    to {
+        top: 2em;
+    }
+}
 #container>span {
     color: black !important;
     text-decoration: none !important;
