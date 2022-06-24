@@ -187,4 +187,14 @@ span:hover {
     #copyright {
         font-size: 15px;
     }
+
+    #container {
+        height: 3vh;
+        padding: .03em;
+        border-radius: 2px;
+    }
+
+    #container>span {
+        font-size: 8px;
+    }
 }
